@@ -1,2 +1,0 @@
-# techathoncompetition.github.io
- 

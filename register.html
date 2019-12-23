@@ -1,86 +1,290 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="./register.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="MAVIA - Register, Reservation, Questionare, Reviews form wizard">
+	<meta name="author" content="Ansonika">
+	<title>MAVIA | Register, Reservation, Questionare, Reviews form wizard</title>
+
+	<!-- Favicons-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+	<!-- GOOGLE WEB FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/icon_fonts/css/all_icons_min.css" rel="stylesheet">
+	<link href="css/skins/square/grey.css" rel="stylesheet">
+
+	<!-- YOUR CUSTOM CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+
+	<script src="js/modernizr.js"></script>
+	<!-- Modernizr -->
+
 </head>
+
 <body>
-<div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
-    <div class="w3-content" style="max-width:400px">
-      <h4 class="w3-center"><b>Register</b></h4>
-      <form id="msform" action="https://docs.google.com/forms/d/e/1FAIpQLSeJNalSjVivI6KjFNmHK68w0ZzW0L8MtsgWrEtw4hYK1qkI4Q/formResponse" target="_self" method="POST">
+	
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div><!-- /Preload -->
+	
+	<div id="loader_form">
+		<div data-loader="circle-side-2"></div>
+	</div><!-- /loader_form -->
 
-        <div class="w3-section">
-            <label>Team Name *</label>
-            <input class="w3-input w3-border" type="text" name="entry.491043794" placeholder="Team Name (Required)" required/>
-        </div>
+	<header>
+		<div class="container-fluid">
+		    <div class="row">
+                <div class="col-3">
+                    <div id="logo_home">
+                        <h1><a href="index.html">MAVIA | Register, Reservation, Questionare, Reviews form wizard</a></h1>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div id="social">
+                        <ul>
+                            <li><a href="#0"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#0"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#0"><i class="icon-google"></i></a></li>
+                            <li><a href="#0"><i class="icon-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- /social -->
+                    <nav>
+                        <ul class="cd-primary-nav">
+                            <li><a href="register.html" class="animated_link">Register</a></li>
+                            <li><a href="index.html" class="animated_link">Home</a></li>
+                            <li><a href="contact.html" class="animated_link">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+		</div>
+		<!-- container -->
+	</header>
+	<!-- End Header -->
 
-        <div class="w3-section">
-            <label>College Name *</label>
-            <input class="w3-input w3-border" type="text" name="entry.1876898339" placeholder="College (Required)" required/>
-        </div>
+	<main>
+		<div id="form_container">
+			<div class="row">
+				<div class="col-lg-5">
+					<div id="left_form">
+						<figure><img src="img/registration_bg.svg" alt=""></figure>
+						<h2>Registration</h2>
+						<p>Tation argumentum et usu, dicit viderer evertitur te has. Eu dictas concludaturque usu, facete detracto patrioque an per, lucilius pertinacia eu vel.</p>
+						<a href="#0" id="more_info" data-toggle="modal" data-target="#more-info"><i class="pe-7s-info"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-7">
 
-        <h2>Team Details</h2>
+					<div id="wizard_container">
+						<div id="top-wizard">
+							<div id="progressbar"></div>
+						</div>
+						<!-- /top-wizard -->
+						<script type="text/javascript">var submitted=false;</script>
+						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='about.html';}"></iframe>
+						<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScDcZXuVHHBJ6JdA7g9rDhwkeEAJzmihfE56ZxEvwQAWe6l5w/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
 
-        <div class="w3-section">
-            <label>Team Leader Name *</label>
-            <input class="w3-input w3-border" type="text" name="entry.1339921680" placeholder="Team Leader (Required)" required/>
-        </div>
+						<!-- <form name="example-1" id="wrapped" method="POST" target="_self" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScDcZXuVHHBJ6JdA7g9rDhwkeEAJzmihfE56ZxEvwQAWe6l5w/formResponse"> -->
+							<input id="website" name="website" type="text" value="">
+							<!-- Leave for security protection, read docs for details -->
+							<div id="middle-wizard">
 
-        <div class="w3-section">
-            <label>Email of team leader *</label>
-            <input class="w3-input w3-border" type="text" name="entry.463267925" placeholder="Email ID (Required)" required/>
-        </div>
+								<div class="step">
+									<h3 class="main_question"><strong>1/3</strong>Please fill with your team details</h3>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" name="entry.1612932583" class="form-control required" placeholder="Team name (required)">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="email" name="emailAddress" class="form-control required" placeholder="Email (any 1 participant) (required)">
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
 
-        <div class="w3-section">
-            <label>Mobile Number of team leader *</label>
-            <input class="w3-input w3-border" type="text" name="entry.8617012" placeholder="Mobile Number (Required)" required/>
-        </div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" name="entry.1519237761" class="form-control required" placeholder="Member 1 (required)">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" name="entry.24347330" class="form-control required" placeholder="Member 2 (required)">
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
 
-        <div class="w3-section">
-            <label>Member 1 *</label>
-            <input class="w3-input w3-border" type="text" name="entry.740685197" placeholder="Member 1 (Required)" required/>
-        </div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" name="entry.536446862" class="form-control required" placeholder="Member 3 (required)">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" name="entry.853964835" class="form-control" placeholder="Member 4">
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step-->
 
-        <div class="w3-section">
-            <label>Member 2 *</label>
-            <input class="w3-input w3-border" type="text" name="entry.598283117" placeholder="Member 2 (Required)" required/>
-        </div>
-    
-        <div class="w3-section">
-            <label>Member 3</label>
-            <input class="w3-input w3-border" type="text" name="entry.915359366" placeholder="Member 3"/>
-        </div>
+								<div class="step">
+									<h3 class="main_question"><strong>2/3</strong>Please fill with additional info</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<input type="text" name="entry.1849289680" class="form-control required" placeholder="College Name (required)">
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<input type="text" name="entry.181504352" class="form-control required" placeholder="Team Leader (required)">
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<input type="tel" name="entry.639557312" class="form-control required" placeholder="Mobile of Team Leader (required)">
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step-->
 
-        <h2>Project Details</h2>
+								<div class="submit step">
+									<h3 class="main_question"><strong>3/3</strong>Send an optional message</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<input type="text" name="entry.1499068844" class="form-control required" placeholder="Project Title (required)">
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+									<div class="form-group">
+										<textarea name="entry.115544305" class="form-control required" style="height:150px;" placeholder="Write your abstract here!"></textarea>
+									</div>
+									<div class="form-group terms">
+										<input name="terms" type="checkbox" class="icheck required" value="yes">
+										<label>Please accept <a href="#" data-toggle="modal" data-target="#terms-txt">terms and conditions</a></label>
+									</div>
+								</div>
+								<!-- /step-->
+							</div>
+							<!-- /middle-wizard -->
+							<div id="bottom-wizard">
+								<button type="button" name="backward" class="backward">Backward </button>
+								<button type="button" name="forward" class="forward">Forward</button>
+								<button type="submit" name="submit" id="submit" class="submit">Submit</button>
+							</div>
+							<!-- /bottom-wizard -->
+						</form>
+					</div>
+					<!-- /Wizard container -->
+				</div>
+			</div><!-- /Row -->
+		</div><!-- /Form_container -->
+	</main>
+	
+	<div class="cd-overlay-nav">
+		<span></span>
+	</div>
+	<!-- cd-overlay-nav -->
 
-        <div class="w3-section">
-            <label>Project Name *</label>
-            <input class="w3-input w3-border" type="text" name="entry.1206257213" placeholder="Project Name (Required)" required/>
-        </div>
+	<div class="cd-overlay-content">
+		<span></span>
+	</div>
+	<!-- cd-overlay-content -->
 
-        <div class="w3-section">
-            <label>Project Abstract *</label>
-            <textarea class="w3-input w3-border" type="text" name="entry.1528997789" rows="10" placeholder="Project Abstract (Required)" required1></textarea>
-        </div>
+	<a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
 
-        <h2>Payment Details</h2>
+	<!-- Modal terms -->
+	<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
 
-        <div class="w3-section">
-            <h5><span style="color: brown">Google Pay:</span> <span>8149291023</span></h5>
-            <h5><span style="color: brown">Paytm:</span> <span>8149291023</span></h5>
-            <h5><span style="color: brown">UPI ID:</span> <span>akshay.biru@okicici</span></h5>
+	<!-- Modal info -->
+	<div class="modal fade" id="more-info" tabindex="-1" role="dialog" aria-labelledby="more-infoLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="more-infoLabel">Frequently asked questions</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
 
-            <p>While payment, add your team name.</p>
-        </div>
-
-        <hr>
-        <input type="submit" id="submit" name="submit" class="w3-button w3-block w3-black w3-margin-bottom submit action-button" value="submit"/>
-      </form>
-    </div>
-  </div>
+	<!-- SCRIPTS -->
+	<!-- Jquery-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!-- Common script -->
+	<script src="js/common_scripts_min.js"></script>
+	<!-- Wizard script -->
+	<script src="js/registration_wizard_func.js"></script>
+	<!-- Menu script -->
+	<script src="js/velocity.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- Theme script -->
+	<script src="js/functions.js"></script>
 
 </body>
 </html>
